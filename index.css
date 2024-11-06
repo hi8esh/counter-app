@@ -1,0 +1,130 @@
+body {
+    /*background-image: url("yarn.jpeg");*/
+    background-image: radial-gradient( circle farthest-corner at 11.7% 80.6%,  rgba(249,185,255,1) 0%, rgba(177,172,255,1) 49.3%, rgba(98,203,255,1) 89% );
+    background-size: cover;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 5%;
+    background-color: wheat;
+    /* background-image: linear-gradient(to right,  rgb(252, 240, 163), rgb(228, 245, 188)); */
+    max-width: 80%;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    position: absolute; /* or relative */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    margin-top: 1px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+button {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    width: 175px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    appearance: none;
+    background-color: #FFFFFF;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #ADCFFF 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    }
+
+
+button:hover {
+    background-color: #FFC229;
+    box-shadow: #FF6314 0 -6px 8px inset;
+    transform: scale(1.125);
+    }
+      
+button:active {
+    transform: scale(1.025);
+    }
+
+@media (min-width: 768px) {
+    button {
+        font-size: 1.5rem;
+        padding: .75rem 2rem;
+        }
+    }
+
+#increment-btn {
+    background-color: #F2F2F2 !important;
+    width: 75px;
+    height: 75px;
+    color: black !important;
+    font-weight: 600;
+    font-size: 20px !important;
+    border-radius: 50%;
+}
+
+#decrement-btn {
+    background-color: #F2F2F2 !important;
+    width: 75px;
+    height: 75px;
+    color: black !important;
+    font-size: 20px !important;
+    border-radius: 50%;
+}
+
+/* #save-btn {
+    background: ;
+} */
+
+#save-el {
+    font-weight: bold;
+}
+
+.button-container {
+  display: inline-block; /* Make the container inline-block */
+}
+
+.button-container > :first-child,
+.button-container > :nth-child(2) {
+  display: inline; /* Make the first two buttons inline */
+}
+
+.button-container > :nth-child(3) {
+  display: block; /* Make the third button block-level, so it goes below the first two */
+  margin-top: 10px; /* Add some vertical spacing if needed */
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+}
